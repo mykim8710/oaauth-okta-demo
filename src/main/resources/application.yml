@@ -1,12 +1,7 @@
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          okta:
-            client-id: {OKTA_CLIENT_ID}
-            client-secret: {OKTA_CLIENT_SECRET}
-            scope: openid+profile
-        provider:
-          okta:
-            issuer-uri: {OKTA_ISSUER_URI}
+okta:
+  oauth2:
+    client-id: {CLIENT_ID}
+    client-secret: {CLIENT_SECRET}
+    issuer: {ISSURE}
+    redirect-uri: {REDIRECT_URI}
+    scopes: openid,profile,email
